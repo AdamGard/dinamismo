@@ -1,0 +1,59 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: rgb(236, 62, 39);
+    top: 0;
+    position: static;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.card{
+    background-color: white;
+    margin: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(0px);
+    transition: ease 0.5s;
+    &:hover{
+        transform: translateY(-15px);
+        transition: ease 0.5s;
+        .noticia-contenido{
+            color: rgb(129, 129, 129);
+            transition: ease 0.5s;
+        }
+    }
+}
+.card h3{
+    color: rgb(0, 0, 0);
+    transition: ease 0.5s;
+    &:hover{
+        color: rgb(248, 125, 24);
+        transition: ease 0.5s;
+    }
+}
+.card img{
+    width: 300px;
+}
+.noticia-contenido{
+    text-align: justify;
+    font-size: 11pt;
+    color: rgb(255, 255, 255);
+    transition: ease 0.5s;
+}
